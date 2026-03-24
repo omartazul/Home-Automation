@@ -1,0 +1,43 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Explicitly declare text files you want to always be normalized and converted
+# to native line endings on checkout.
+*.dart text
+*.ino text
+*.cpp text
+*.h text
+*.c text
+*.md text
+*.yaml text
+*.yml text
+*.json text
+*.xml text
+*.html text
+*.css text
+*.js text
+
+# Ensure shell scripts always use LF (Unix) line endings
+# Important for Android gradlew and iOS scripts
+*.sh text eol=lf
+gradlew text eol=lf
+
+# Ensure Windows batch files always use CRLF line endings
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Denote all files that are truly binary and should not be modified.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.zip binary
+*.bin binary
+*.apk binary
+*.pdf binary
+*.ttf binary
+*.otf binary
+
+# Exclude generated SVGs from language statistics (optional but helpful)
+*.svg linguist-generated=true

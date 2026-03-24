@@ -1,0 +1,46 @@
+name: home
+description: "Smart Home Controller – Flutter UI for an ESP01-S IoT device."
+publish_to: 'none'
+version: 5.1.0
+
+environment:
+  sdk: ^3.10.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_svg: ^2.2.4
+  http: ^1.2.1
+  shared_preferences: ^2.5.4
+  file_picker: ^10.3.10
+  web_socket_channel: ^3.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.14.4
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - lib/assets/images/button_background.svg
+    - lib/assets/images/button.svg
+    - lib/assets/images/button_pressed.svg
+    - lib/assets/images/power_button.svg
+    - lib/assets/images/power_button_pressed.svg
+    - lib/assets/images/ceiling_fan.svg
+  fonts:
+    - family: Sacramento
+      fonts:
+        - asset: lib/assets/fonts/Sacramento-Regular-for-Sign.ttf
+    - family: Galada
+      fonts:
+        - asset: lib/assets/fonts/Galada-Regular.ttf
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  remove_alpha_ios: true
+  image_path: "lib/assets/icon/app_icon.png"
+

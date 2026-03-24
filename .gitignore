@@ -1,0 +1,29 @@
+# Global VCS ignores for Home_Automation monorepo
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+*.log
+
+# IDE metadata
+**/.idea/
+*.iml
+
+# Flutter/Android generated artifacts (app side)
+Home_App/.dart_tool/
+Home_App/.flutter-plugins-dependencies
+Home_App/.pub/
+Home_App/.pub-cache/
+Home_App/build/
+Home_App/coverage/
+Home_App/android/.gradle/
+Home_App/android/.kotlin/
+Home_App/android/local.properties
+Home_App/android/app/debug/
+Home_App/android/app/profile/
+Home_App/android/app/release/
+
+# Firmware build outputs
+Firmware/esp01s_firmware/build/
