@@ -27,7 +27,7 @@ const char* kDefaultPassword = "123456789";
 
 const uint32_t kAppSerialBaud = 115200;
 const unsigned long kSerialDefaultTimeoutMs = 100UL;
-const unsigned long kStaConnectTimeoutMs = 15000UL;
+const unsigned long kStaConnectTimeoutMs = 180000UL;
 const unsigned long kRestartDelayMs = 1000UL;
 
 const uint16_t kSerialLineLimit = 256;
